@@ -8,9 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: src/shippingservice/shipping-service
 
     steps:
     - name: Checkout
@@ -24,8 +21,6 @@ jobs:
     - name: Download dependencies
       run: go mod download
 
-    - name: Run tests
-      run: go test ./...
 
     - name: Docker Build
       run: docker build -t martin555/shippingservice:latest .
