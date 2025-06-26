@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: shippingservice
-          image: mart1n-chamoy/shippingservice:latest
+          image: martin555/shippingservice:latest
           ports:
             - containerPort: 8080
